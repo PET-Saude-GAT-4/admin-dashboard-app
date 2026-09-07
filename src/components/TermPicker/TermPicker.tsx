@@ -32,7 +32,7 @@ export default function TermPicker({ terms, onSelect }: TermPickerProps) {
       <div className="flex flex-col h-96 overflow-y-auto gap-md">
         <ul className="flex flex-col gap-md">
           {filtered.map((term) => (
-            <div
+            <li
               key={term.uuid}
               className="flex flex-row items-center gap-md border border-outline-common rounded-md p-sm justify-between cursor-pointer"
               onClick={() => onSelect(term)}
@@ -57,7 +57,7 @@ export default function TermPicker({ terms, onSelect }: TermPickerProps) {
               <span onClick={(e) => e.stopPropagation()}>
                 <AddButton onClick={() => onSelect(term)} />
               </span>
-            </div>
+            </li>
           ))}
         </ul>
       </div>
