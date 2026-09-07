@@ -10,7 +10,7 @@ export type TermOutput = {
   updatedAt: string;
 };
 
-export type BoardTermOutput = {
+export type TermPlacementOutput = {
   uuid: string;
   termUuid: string;
   description: string;
@@ -18,3 +18,5 @@ export type BoardTermOutput = {
   signWriting: SignWritingOutput;
   order: number;
 };
+
+export type BoardTermOutput = TermPlacementOutput;

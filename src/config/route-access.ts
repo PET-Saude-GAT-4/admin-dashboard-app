@@ -10,6 +10,7 @@ export const ROUTE_ACCESS = [
   { path: "/dashboard", allowedRoles: "all" },
   { path: "/library", allowedRoles: "all" },
   { path: "/boards", allowedRoles: ["super_admin", "admin"] },
+  { path: "/phrases", allowedRoles: ["super_admin", "admin"] },
   { path: "/pictograms", allowedRoles: ["super_admin", "admin"] },
   { path: "/sign-writings", allowedRoles: ["super_admin", "admin"] },
   { path: "/terms", allowedRoles: ["super_admin", "admin"] },

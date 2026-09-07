@@ -54,7 +54,9 @@ export default function TermPicker({ terms, onSelect }: TermPickerProps) {
                 />
               </div>
               <p className="text-text-on-primary">{term.description}</p>
-              <AddButton onClick={() => onSelect(term)} />
+              <span onClick={(e) => e.stopPropagation()}>
+                <AddButton onClick={() => onSelect(term)} />
+              </span>
             </div>
           ))}
         </ul>
