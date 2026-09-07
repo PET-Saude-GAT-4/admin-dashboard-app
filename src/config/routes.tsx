@@ -8,6 +8,7 @@ import {
   MdRecentActors,
   MdLiveHelp,
   MdContentPaste,
+  MdChat,
 } from "react-icons/md";
 import { ROUTE_ACCESS, RoutePath } from "@/config/route-access";
 
@@ -37,6 +38,12 @@ const ROUTE_DISPLAY: Record<RoutePath, RouteDisplay> = {
     title: "Pranchas",
     subtitle: "Gerencie as pranchas do sistema",
     icon: MdContentPaste,
+    placement: "main",
+  },
+  "/phrases": {
+    title: "Frases",
+    subtitle: "Gerencie as frases do sistema",
+    icon: MdChat,
     placement: "main",
   },
   "/pictograms": {

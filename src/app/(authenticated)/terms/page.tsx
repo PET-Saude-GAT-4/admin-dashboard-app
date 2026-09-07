@@ -16,6 +16,7 @@ import Image from "next/image";
 import Link from "next/link";
 import RemoveButton from "@/components/RemoveButton/RemoveButton";
 import AssetPicker, { Asset } from "@/components/AssetPicker/AssetPicker";
+import { formatList } from "@/utils/text";
 
 type TermRow = {
   uuid: string;
@@ -24,11 +25,6 @@ type TermRow = {
   description: string;
   createdAt: string;
 };
-
-function formatList(items: string[]): string {
-  if (items.length <= 1) return items[0] ?? "";
-  return `${items.slice(0, -1).join(", ")} e ${items[items.length - 1]}`;
-}
 
 function toRow(t: TermOutput): TermRow {
   return {
